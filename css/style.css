@@ -8049,7 +8049,7 @@ img{
 	padding: 120px 0 90px;
 }
 
-.clients-section:before{
+/* .clients-section:before{
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -8066,7 +8066,7 @@ img{
 	-ms-transform: scale(-1);
 	-o-transform: scale(-1);
 	transform: scale(-1);
-}
+} */
 
 
 .clients-section .sponsors-outer{
@@ -8123,7 +8123,7 @@ img{
 	display: inline-block;
 	font-size: 20px;
 	line-height: 1.2em;
-	background-color: #ec167f;
+	background-color: var(--_blue);
 	color: #ffffff;
 	padding: 10px 30px;
 	font-weight: 700;
@@ -8136,9 +8136,8 @@ img{
 }
 
 .clients-section .sponsors-outer:nth-child(2) h3{
-	background-color: #40cbb4;
+	background-color: var(--_darkgreen);
 }
-
 
 .clients-section .icon-dots-3{
 	left: -60px;
