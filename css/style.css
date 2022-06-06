@@ -7502,7 +7502,7 @@ img{
 	position: relative;
 	display: inline-block;
 	font-size: 80px;
-	color: #222222;
+	color: var(--_blue);
 }
 
 .register-section .title-column .text{
@@ -11140,4 +11140,20 @@ img{
     width: 100%;
     height: 540px;
     margin-bottom: -10px;	
+}
+
+
+/* Others */
+.bg-darkgreen {
+    background-color: var(--_darkgreen);
+}
+.bg-blue {
+    background-color: var(--_blue);
+}
+.bg-darkblue {
+    background-color: var(--_darkblue);
+}
+
+.text-green {
+    color:var(--_green)
 }
