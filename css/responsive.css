@@ -59,7 +59,7 @@
 	}
 
 	.main-header .main-box{
-		padding: 10px 0;
+		padding: 10px;
 		background-color: #1e1f36;
 	}
 
@@ -760,10 +760,11 @@
 	}
 
 	.feature-block-three .icon-box{
-		position: relative;
+		position: absolute;
 		display: inline-block;
-		left: 0;
-		top: 0;
+		left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
 		height: 80px;
 		width: 80px;
 		border-radius: 50%;

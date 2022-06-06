@@ -7,3 +7,7 @@
 .bg-darkblue {
     background-color: var(--_darkblue);
 }
+
+.text-green {
+    color:var(--_green)
+}

@@ -135,7 +135,6 @@ body {
 a{
 	text-decoration:none;
 	cursor:pointer;
-	color:#f20487;
 }
 
 button,
@@ -1397,7 +1396,7 @@ img{
 	font-size: 40px;
 	line-height: 50px;
 	cursor: pointer;
-	color:#e1137b;
+	color:var(--_green);
 	margin:7px 0px 2px;
 	display: none;
 }
@@ -1490,7 +1489,7 @@ img{
 ***/
 
 .main-header.fixed-header .main-box{
-	padding: 10px 0;
+	padding: 10px;
 	background-color: #101130;
 }
 
@@ -1599,7 +1598,7 @@ img{
 	text-align: center;
 	font-size: 14px;
 	color: #ffffff;
-	background-color: #e1137b;
+	background-color: var(--_darkgreen);
 	cursor: pointer;
 	z-index: 10;
 	-webkit-transition:all 0.5s ease;
@@ -1655,7 +1654,7 @@ img{
 
 .mobile-menu .navigation li:hover > a,
 .mobile-menu .navigation li.current > a{
-	color:#e1137b;
+	color:var(--_darkgreen);
 }
 
 .mobile-menu .navigation li.dropdown .dropdown-btn{
@@ -3245,6 +3244,8 @@ img{
     margin-bottom: 10px;
     top: 50%;
     transform: translateY(-50%);
+	left: 35%;
+	text-align: left;
 }
 
 .feature-block-three h4 a{
@@ -3337,6 +3338,7 @@ img{
 	padding: 20px 30px;
 	padding-left: 80px;
 	height: 150px;
+	width: 300px;
 	background-color:#ffffff;
 	border: 1px solid #eeeeee;
 	box-shadow: 0 30px 40px rgba(0,0,0,0.10);
@@ -7211,7 +7213,7 @@ img{
 
 ***/
 
-.video-section{
+.amia-section{
 	position: relative;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -7219,38 +7221,23 @@ img{
 	background-attachment:fixed;
 }
 
-.video-section:before{
-	position: absolute;
-	left: 0;
-	top: 0;
-	height: 100%;
-	width: 100%;
-	background: rgb(247,0,104);
-	background: -moz-linear-gradient(to left, rgba(247,0,104,1) 0%, rgba(68,16,102,1) 100%);
-	background: -webkit-linear-gradient(to left, rgba(247,0,104,1) 0%, rgba(68,16,102,1) 100%);
-	background: linear-gradient(to left, rgba(247,0,104) 0%,rgba(68,16,102,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F70068', endColorstr='#441066',GradientType=1 );
-	opacity: .70;
-	content: "";
-}
-
-.video-section .content-box{
+.amia-section .content-box{
 	position: relative;
 	text-align: center;
 }
 
-.video-section .content-box .text{
+.amia-section .content-box .text{
 	position: relative;
 	display: block;
 	font-size: 18px;
-	line-height: 26px;
-	color: #ffbc00;
-	font-weight: 500;
-	text-transform: uppercase;
+	line-height: 25px;
+	color: var(--_gray);
+	font-weight: 300;
 	margin-bottom: 15px;
+	padding-top:20px
 }
 
-.video-section .content-box h2{
+.amia-section .content-box h2{
 	display: block;
 	font-size: 48px;
 	line-height: 1.2em;
@@ -7258,13 +7245,13 @@ img{
 	font-weight: 700;
 }
 
-.video-section .play-now{
+.amia-section .play-now{
     position: relative;
     display: inline-block;
     margin-top: 50px;
 }
 
-.video-section .play-now .icon{
+.amia-section .play-now .icon{
 	height: 100px;
 	width: 100px;
 	line-height: 100px;
@@ -8096,6 +8083,7 @@ img{
 	position:relative;
 	text-align:center;
 	margin-bottom: 0;
+	height: 130px;
 	border: 1px solid #dddddd;
 	box-shadow: 0 0 30px rgba(0,0,0,0.10);
 	background-color: #ffffff;
