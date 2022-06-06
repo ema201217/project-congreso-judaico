@@ -50,7 +50,6 @@
 }
 
 @media only screen and (max-width: 1023px){
-	
 	.main-header,
 	.main-header.fixed-header,
 	.main-header .main-box{
@@ -283,6 +282,14 @@
 }
 
 @media only screen and (max-width: 767px){
+	.scroll-to-top{
+		background-color: var(--_green);
+	}
+
+	.about-section .image-column{
+		margin-bottom: 0px;
+	}
+
 	.main-header .nav-outer .main-menu{
 		display: none !important;
 	}
