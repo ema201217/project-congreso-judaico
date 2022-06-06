@@ -521,7 +521,7 @@ color:#ffffff;
 	color:#ffffff;
 	font-weight:400;
 	text-align:center;
-	background:linear-gradient(90deg,var(--_darkblue) 0%,var(--_blue) 70%,var(--_light-green) 100%);
+	background:linear-gradient(130deg,var(--_darkblue) 0%,var(--_blue) 50%,#00b8b690 100%);
 	overflow: hidden;
 	border-radius: 10px;
 }
