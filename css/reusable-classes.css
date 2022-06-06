@@ -1,0 +1,9 @@
+.bg-darkgreen {
+    background-color: var(--_darkgreen);
+}
+.bg-blue {
+    background-color: var(--_blue);
+}
+.bg-darkblue {
+    background-color: var(--_darkblue);
+}
