@@ -1,7 +1,7 @@
-const errorContainer = "#username-error, #email-error, #message-error";
+const errorContainer = "#fullname-error, #email-error, #message-error";
 const errorClass = "text-danger";
 const rules = {
-  username: {
+  fullname: {
     required: true,
     minlength:5,
     maxlength:40
@@ -20,7 +20,7 @@ const rules = {
   },
 };
 const messages = {
-  username: {
+  fullname: {
       required:"El nombre completo es requerido",
       minlength: jQuery.validator.format("Ingrese su nombre completo"),
       maxlength:jQuery.validator.format("Se supero los 40 caracteres")
