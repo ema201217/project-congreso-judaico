@@ -12,9 +12,21 @@ document.getElementById('form')
    emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
       btn.firstElementChild.textContent = 'Consultanos';
-      alert('Sent!');
+      Swal.fire({
+        position: 'center',
+        icon: 'success',
+        title: 'Mensaje enviado',
+        showConfirmButton: false,
+        timer: 2000
+      })
     }, (err) => {
       btn.firstElementChild.textContent = 'Consultanos';
-      alert(JSON.stringify(err));
+      Swal.fire({
+        position: 'center',
+        icon: 'error',
+        title: 'Error al enviar el mensaje',
+        showConfirmButton: false,
+        timer: 2000
+      })
     });
 });
