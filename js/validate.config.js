@@ -8,6 +8,9 @@ const rules = {
     required: true,
     email: true,
   },
+  phone: {
+    number:true
+  },
   message: {
     required: true,
   },
@@ -19,8 +22,8 @@ const messages = {
     email: "Ingrese un email valido",
   },
   message: "Ingrese un mensaje",
+  phone: "Ingrese un teléfono valido"
 };
-
 const alerts = {
   success: () =>
     Swal.fire({
@@ -39,7 +42,6 @@ const alerts = {
       timer: 2000,
     }),
 };
-
 const options = {
     errorContainer,
     errorClass,
@@ -48,5 +50,5 @@ const options = {
     debug: true,
     submitHandler: (form) => sendEmail(form, alerts), /* sendEmail ==> sendemail.js */
 };
-  
+
 $("#form").validate(options);
