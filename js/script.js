@@ -433,7 +433,7 @@
   // Scroll to a Specific Div
   if ($(".scroll-to-target").length) {
     $(".scroll-to-target").on("click", function (e) {
-    
+      e.preventDefault();
       var target = $(this).attr("data-target");
       // animate
       $("html, body").animate(
@@ -447,7 +447,7 @@
 
   if ($(".thematic").length) {
     $(".thematic").on("click", function (e) {
-      
+      e.preventDefault();
       var href = $(this).attr("href");
       // animate
       $("html, body").animate(
@@ -458,10 +458,9 @@
       );
     });
   }
-  
   if ($(".events").length) {
     $(".events").on("click", function (e) {
-     
+      e.preventDefault();
       var href = $(this).attr("href");
       // animate
       $("html, body").animate(
@@ -475,7 +474,7 @@
 
   if ($(".section1").length) {
     $(".section1").on("click", function (e) {
-    
+      e.preventDefault();
       $("html, body").animate(
         {
           scrollTop: 0,
@@ -487,7 +486,7 @@
 
   if ($(".contact").length) {
     $(".contact").on("click", function (e) {
-     
+      e.preventDefault();
       var href = $(this).attr("href");
       // animate
       $("html, body").animate(
@@ -520,15 +519,19 @@
       .parent()
       .addClass("current");
   });
-
   if ($(".dropdown").length) {
     $(".dropdown").on("click", function (e) {
+      const childChild = e.currentTarget.firstElementChild.firstElementChild;
+      const child = e.currentTarget.firstElementChild;
       $(".dropdown").siblings().removeClass("current");
       e.currentTarget.classList.add("current");
+      location.hash = childChild
+        ? childChild.getAttribute("href")
+        : child.getAttribute("href");
     });
   }
-
   $(".logo").on("click", function () {
+    location.hash = "#";
 	$(".dropdown").siblings().removeClass("current");
 	$("a[href='#section1']").parent().addClass("current");
   });
