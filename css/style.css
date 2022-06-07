@@ -86,10 +86,6 @@ h1,h2,h3,h4,h5,h6 {
 	font-family: 'Ubuntu', sans-serif;
 }
 
-input,button,select,textarea{
-
-}
-
 textarea{
 	overflow:hidden;
 }
@@ -2227,9 +2223,6 @@ color:#ffffff;
 	transition: all 300ms ease;
 }
 
-.speaker-block .info-box .name a:hover{
-
-}
 
 .speaker-block .info-box .designation{
 	position: relative;
