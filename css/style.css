@@ -668,7 +668,7 @@ color:#ffffff;
 	position:absolute;
 	left: 50%;
 	bottom: 10px;
-	height: 2px;
+	height: 4px;
 	width: 0%;
 	content: "";
 	-webkit-transform: scale(-1);
@@ -2399,6 +2399,8 @@ color:#ffffff;
 	padding:10px 20px;
 	height: 200px;
 	padding-left: 50px;
+	min-height: 100px;
+	max-height: 200px;
 }
 
 .contact-form button{

@@ -3,26 +3,38 @@ const errorClass = "text-danger";
 const rules = {
   username: {
     required: true,
+    minlength:5,
+    maxlength:40
   },
   email: {
     required: true,
     email: true,
   },
   phone: {
-    number:true
+    number:true,
+    minlength:6,
+    maxlength:13
   },
   message: {
     required: true,
   },
 };
 const messages = {
-  username: "El nombre completo es requerido",
+  username: {
+      required:"El nombre completo es requerido",
+      minlength: jQuery.validator.format("Ingrese su nombre completo"),
+      maxlength:jQuery.validator.format("Supero los 40 caracteres")
+  },
   email: {
     required: "El email es requerido",
     email: "Ingrese un email valido",
   },
   message: "Ingrese un mensaje",
-  phone: "Ingrese un teléfono valido"
+  phone: {
+      number:"Ingrese un teléfono valido",
+      minlength: jQuery.validator.format("Ingrese un teléfono valido"),
+      maxlength:jQuery.validator.format("Ingrese un teléfono valido"),
+  }
 };
 const alerts = {
   success: () =>
@@ -50,5 +62,4 @@ const options = {
     debug: true,
     submitHandler: (form) => sendEmail(form, alerts), /* sendEmail ==> sendemail.js */
 };
-
 $("#form").validate(options);
