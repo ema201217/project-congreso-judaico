@@ -23,7 +23,7 @@ const messages = {
   username: {
       required:"El nombre completo es requerido",
       minlength: jQuery.validator.format("Ingrese su nombre completo"),
-      maxlength:jQuery.validator.format("Supero los 40 caracteres")
+      maxlength:jQuery.validator.format("Se supero los 40 caracteres")
   },
   email: {
     required: "El email es requerido",
@@ -62,4 +62,10 @@ const options = {
     debug: true,
     submitHandler: (form) => sendEmail(form, alerts), /* sendEmail ==> sendemail.js */
 };
+
+const elementsForm = $("#form")[0].elements
+for (let i = 0; i < elementsForm.length - 1; i++) {
+  $(elementsForm[i]).val($(elementsForm[i]).val().trim())
+}
+
 $("#form").validate(options);
