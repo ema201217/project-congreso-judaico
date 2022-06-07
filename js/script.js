@@ -383,24 +383,6 @@
 			}
 		});
 	}
-
-	//Contact Form Validation
-	if($('#contact-form').length){
-		$('#contact-form').validate({
-			rules: {
-				name: {
-					required: true
-				},
-				email: {
-					required: true,
-					email: true
-				},
-				message: {
-					required: true
-				}
-			}
-		});
-	}
 	
 	// Scroll to a Specific Div
 	if($('.scroll-to-target').length){

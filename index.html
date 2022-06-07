@@ -521,21 +521,25 @@
                                     <div class="form-group">
                                         <span class="icon fa fa-user"></span>
                                         <input type="text" name="username" placeholder="Nombre completo" required="" />
+                                        <span class="error" id="username-error"></span>
                                     </div>
 
                                     <div class="form-group">
                                         <span class="icon fa fa-envelope"></span>
-                                        <input type="email" name="email" value="" placeholder="Email" required />
+                                        <input type="email" name="email" value="" placeholder="Email"  required/>
+                                        <span class="error" id="email-error"></span>
                                     </div>
-
+                                    
                                     <div class="form-group">
                                         <span class="icon fa fa-phone"></span>
-                                        <input type="text" name="phone" placeholder="Telefono" required="" />
+                                        <input type="text" name="phone" placeholder="Telefono"/>
+                                        <span class="error" id="phone-error"></span>
                                     </div>
-
+                                    
                                     <div class="form-group">
                                         <span class="icon fa fa-edit"></span>
-                                        <textarea name="message" placeholder="Mensaje"></textarea>
+                                        <textarea name="message" placeholder="Mensaje" required></textarea>
+                                        <span class="error" id="message-error"></span>
                                     </div>
 
                                     <div class="form-group text-right">
@@ -746,9 +750,10 @@
     <script src="js/owl.js"></script>
     <script src="js/jquery.countdown.js"></script>
     <script src="js/wow.js"></script>
-    <script src="js/sendemail.config.js"></script>
     <script src="js/sweetalert2.js"></script>
-    <script src="sweetalert2.all.min.js"></script>
+    <script src="js/validate.js"></script>
+    <script src="js/sendemail.js"></script>
+    <script src="js/validate.config.js"></script>
     <script src="js/script.js"></script>
 
 </body>
