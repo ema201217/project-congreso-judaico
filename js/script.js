@@ -266,11 +266,19 @@
 	}
 	
 	enableMasonry();
-	
+
+
+	/* Close menu mobile when clicked link-header */
+	if($('.link-header').length){
+		$('.link-header').on('click', function(){
+			$('.close-btn').click()
+		})
+	}
+
+
 	//Fact Counter + Text Count
 	if($('.count-box').length){
 		$('.count-box').appear(function(){
-	
 			var $t = $(this),
 				n = $t.find(".count-text").attr("data-stop"),
 				r = parseInt($t.find(".count-text").attr("data-speed"), 10);

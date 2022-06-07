@@ -496,7 +496,7 @@ color:#ffffff;
 }
 
 .btn-style-five:hover{
-   color:#24293d;
+   color:var(--_blue);
    -webkit-box-shadow: 0 10px 30px rgba(0,0,0,0.10);
    -moz-box-shadow: 0 10px 30px rgba(0,0,0,0.10);
    -ms-box-shadow: 0 10px 30px rgba(0,0,0,0.10);
@@ -536,7 +536,6 @@ color:#ffffff;
    -ms-transform-origin: bottom left;
    transform-origin: bottom left;
 }
-
 
 /* Main header */
 .main-header{

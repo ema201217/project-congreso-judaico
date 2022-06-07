@@ -4,7 +4,7 @@ document.getElementById('form')
  .addEventListener('submit', function(event) {
    event.preventDefault();
 
-   btn.firstElementChild.textContent = 'Consultando...';
+   btn.firstElementChild.textContent = 'Enviando...';
 
    const serviceID = 'default_service';
    const templateID = 'template_cj3bl4k';
@@ -19,6 +19,7 @@ document.getElementById('form')
         showConfirmButton: false,
         timer: 2000
       })
+      this.reset()
     }, (err) => {
       btn.firstElementChild.textContent = 'Consultanos';
       Swal.fire({
