@@ -4,7 +4,7 @@ document.getElementById('form')
  .addEventListener('submit', function(event) {
    event.preventDefault();
 
-   btn.firstElementChild.textContent = 'Enviando...';
+   btn.firstElementChild.textContent = 'Consultando...';
 
    const serviceID = 'default_service';
    const templateID = 'template_cj3bl4k';
