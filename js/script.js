@@ -406,35 +406,46 @@
 		});
 	}
 
-	$('#TEMATIC').click(function(){
-        var link = $(this);
-        var anchor  = link.attr('href');
-        $('html, body').stop().animate({
-            scrollTop: jQuery(anchor).offset().top - 80,
-			
-        }, 2000);
-        return false;
-    });
-
-	$('#EVENTS').click(function(){
-        var link = $(this);
-        var anchor  = link.attr('href');
-        $('html, body').stop().animate({
-            scrollTop: jQuery(anchor).offset().top - 120,
-			
-        }, 2000);
-        return false;
-    });
-
-	$('#SECTION1').click(function(e){
-		e.preventDefault()
-        $('html, body').stop().animate({
-            scrollTop: 0,
-        }, 2000);
-        return false;
-    });
+	if($('.thematic').length){
+		$(".thematic").on('click', function() {
+			var href = $(this).attr('href');
+		   // animate
+		   $('html, body').animate({
+			   scrollTop: $(href).offset().top - 80
+			 }, 1500);
 	
-	$('#CONTACT').click(function(){
+		});
+	}
+	if($('.events').length){
+		$(".events").on('click', function() {
+			var href = $(this).attr('href');
+		   // animate
+		   $('html, body').animate({
+			   scrollTop: $(href).offset().top - 120
+			 }, 1500);
+	
+		});
+	}
+	
+	if($('.section1').length){
+		$(".section1").on('click', function(e) {
+			e.preventDefault();
+			$('html, body').animate({
+				scrollTop: 0
+			}, 3000);
+		});
+	}
+	if($('.contact').length){
+		$(".contact").on('click', function() {
+			var href = $(this).attr('href');
+		   // animate
+		   $('html, body').animate({
+			   scrollTop: $(href).offset().top - 30
+			 }, 2000);
+		});
+	}
+
+	$('#CONTACT1').click(function(){
         var link = $(this);
         var anchor  = link.attr('href');
         $('html, body').stop().animate({
@@ -443,6 +454,17 @@
         }, 2000);
         return false;
     });
+
+	$('#CONTACT2').click(function(){
+        var link = $(this);
+        var anchor  = link.attr('href');
+        $('html, body').stop().animate({
+            scrollTop: jQuery(anchor).offset().top - 30,
+        }, 2000);
+        return false;
+    });
+
+
 
 	
 	

@@ -26,6 +26,7 @@
 
 <body>
     <div class="page-wrapper">
+
         <!-- Preloader -->
         <div class="preloader"></div>
         <!-- Header span -->
@@ -59,12 +60,12 @@
 
                             <div class="collapse navbar-collapse clearfix" id="navbarSupportedContent">
                                 <ul class="navigation clearfix">
-                                    <li class="current dropdown"><a href="#" id="SECTION1">Sección 1</a></li>
-                                    <li class="dropdown"><a href="#tematic" id="TEMATIC">Temáticas</a></li>
-                                    <li class="dropdown"><a href="#events" id="EVENTS">Eventos</a></li>
+                                    <li class="current dropdown"><a href="#" class="section1">Sección 1</a></li>
+                                    <li class="dropdown"><a href="#thematic" class="thematic">Temáticas</a></li>
+                                    <li class="dropdown"><a href="#events" class="events">Eventos</a></li>
                                     <li class="d-none d-md-block">
                                         <div class="btn-box">
-                                            <a href="#contact" id="CONTACT" class="theme-btn btn-style-three"><span
+                                            <a href="#contact" class="contact theme-btn btn-style-three"><span
                                                     class="btn-title">Inscribite</span></a>
                                         </div>
                                     </li>
@@ -120,7 +121,7 @@
                                 </li>
                             </ul>
                             <div class="btn-box">
-                                <a href="#contact" class="theme-btn btn-style-two"><span
+                                <a href="#contact" class="contact theme-btn btn-style-two"><span
                                         class="btn-title">Inscribite</span></a>
                             </div>
                         </div>
@@ -143,7 +144,7 @@
                                 </li>
                             </ul>
                             <div class="btn-box">
-                                <a href="#" class="theme-btn btn-style-two"><span
+                                <a href="#contact" class="contact theme-btn btn-style-two"><span
                                         class="btn-title">Inscribite</span></a>
                             </div>
                         </div>
@@ -153,7 +154,7 @@
         </section>
         <!--End Banner Section -->
 
-        <!-- Coming Soon -->
+        <!-- Coming Soon - Countdown -->
         <section class="coming-soon-section">
             <div class="auto-container">
                 <div class="outer-box">
@@ -164,6 +165,7 @@
             </div>
         </section>
 
+        <!--Organize Section -->
         <section class="organize-section row">
             <div class="auto-container text-center container-responsive">
 
@@ -215,9 +217,10 @@
                 </div>
             </div>
         </section>
+        <!--End Organize Section -->
 
-
-        <section class="thematic-section" id="tematic">
+        <!--Thematic Section -->
+        <section class="thematic-section" id="thematic">
             <div class="auto-container p-3">
                 <div class="row">
                     <!-- Content Column -->
@@ -255,7 +258,9 @@
                 </div>
             </div>
         </section>
+        <!--Thematic Section -->
 
+        <!-- Thematic Section two-->
         <section class="thematic-section-two bg-white">
             <div class="auto-container">
                 <div class="row text-center justify-content-around">
@@ -311,7 +316,9 @@
 
             </div>
         </section>
+        <!--End Thematic Section two-->
 
+        <!-- Events Section -->
         <section class="events-section" id="events">
             <div class="auto-container">
                 <div class="row justify-content-center px-3">
@@ -373,7 +380,7 @@
                 </div>
             </div>
         </section>
-
+        <!--End Events Section -->
 
 
         <!-- Amia Section -->
@@ -509,7 +516,7 @@
                         <!--Register Form-->
                         <div class="contact-form col-lg-8 col-md-6 col-sm-12">
                             <div class="form-inner">
-                                <form method="post" action="#">
+                                <form method="post" action="sendemail.php">
                                     <div class="form-group">
                                         <span class="icon fa fa-user"></span>
                                         <input type="text" name="username" placeholder="Nombre completo" required="" />
@@ -700,7 +707,7 @@
             </div>
 
             <!--Footer Bottom-->
-           <!--  <div class="footer-bottom">
+            <!--  <div class="footer-bottom">
                 <div class="auto-container">
                     <div class="inner-container clearfix">
                         <div class="copyright-text">
@@ -713,7 +720,7 @@
                 </div>
             </div>  -->
         </footer>
-            <!-- End Footer -->
+        <!-- End Footer -->
     </div>
     <!--End pagewrapper-->
 
