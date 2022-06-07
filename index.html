@@ -33,7 +33,7 @@
         <!-- Main Header-->
         <header class="main-header">
             <div class="main-box">
-                <div class="auto-container d-flex align-items-center justify-content-around">
+                <div class="auto-container d-flex align-items-center justify-content-between">
                     <div class="logo-box">
                         <div class="logo">
                             <a href="#"><img src="images/1_logo.png" alt="" title="" /></a>
@@ -59,12 +59,12 @@
 
                             <div class="collapse navbar-collapse clearfix" id="navbarSupportedContent">
                                 <ul class="navigation clearfix">
-                                    <li class="current dropdown"><a href="#">Sección 1</a></li>
-                                    <li class="dropdown"><a href="#">Temáticas</a></li>
-                                    <li class="dropdown"><a href="#">Eventos</a></li>
+                                    <li class="current dropdown"><a href="#" id="SECTION1">Sección 1</a></li>
+                                    <li class="dropdown"><a href="#tematic" id="TEMATIC">Temáticas</a></li>
+                                    <li class="dropdown"><a href="#events" id="EVENTS">Eventos</a></li>
                                     <li class="d-none d-md-block">
                                         <div class="btn-box">
-                                            <a href="#contact" class="theme-btn btn-style-three"><span
+                                            <a href="#contact" id="CONTACT" class="theme-btn btn-style-three"><span
                                                     class="btn-title">Inscribite</span></a>
                                         </div>
                                     </li>
@@ -78,20 +78,23 @@
 
             <!-- Mobile Menu  -->
             <div class="mobile-menu">
+
                 <div class="menu-backdrop"></div>
                 <div class="close-btn">
                     <span class="icon flaticon-cancel-1"></span>
                 </div>
-                
+
                 <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
                 <nav class="menu-box">
-                    <div class="nav-logo">
-                        <a href="index.html"><img src="images/1_logo_invert.png" alt="" title="" /></a>
-                    </div>
+                    <div class="auto-container">
+                        <div class="nav-logo">
+                            <a href="index.html"><img src="images/1_logo_invert.png" alt="" title="" /></a>
+                        </div>
 
-                    <ul class="navigation clearfix">
-                        <!--Keep This Empty / Menu will come through Javascript-->
-                    </ul>
+                        <ul class="navigation clearfix">
+                            <!--Keep This Empty / Menu will come through Javascript-->
+                        </ul>
+                    </div>
                 </nav>
             </div>
             <!-- End Mobile Menu -->
@@ -117,7 +120,7 @@
                                 </li>
                             </ul>
                             <div class="btn-box">
-                                <a href="#" class="theme-btn btn-style-two"><span
+                                <a href="#contact" class="theme-btn btn-style-two"><span
                                         class="btn-title">Inscribite</span></a>
                             </div>
                         </div>
@@ -161,25 +164,22 @@
             </div>
         </section>
 
-        
+        <section class="organize-section row">
+            <div class="auto-container text-center container-responsive">
 
-       
-        <section class="clients-section row">
-            <div class="auto-container text-center">
-           
 
-                <div class="sponsors-outer">
+                <div class="organize-item">
                     <h3>Organizan</h3>
                     <div class="row justify-content-center">
-                        
-                        <div class="client-block col-lg-6 col-md-6 col-sm-12">
+
+                        <div class="organize-block col-lg-6 col-md-6 col-sm-12">
                             <figure class="image-box">
                                 <img src="images/clients/1.png" alt="" />
                             </figure>
                         </div>
 
-                        
-                        <div class="client-block col-lg-6 col-md-6 col-sm-12">
+
+                        <div class="organize-block col-lg-6 col-md-6 col-sm-12">
                             <figure class="image-box">
                                 <img src="images/clients/2.png" alt="" />
                             </figure>
@@ -187,26 +187,26 @@
                     </div>
                 </div>
 
-                <div class="sponsors-outer">
+                <div class="organize-item">
                     <h3>Organizan</h3>
 
                     <div class="row justify-content-center">
-                       
-                        <div class="client-block col-lg-4 col-md-6 col-sm-12">
+
+                        <div class="organize-block col-lg-4 col-md-6 col-sm-12">
                             <figure class="image-box">
-                                <img src="images/clients/5.png" alt=""/>
+                                <img src="images/clients/5.png" alt="" />
                             </figure>
                         </div>
 
-                        
-                        <div class="client-block col-lg-4 col-md-6 col-sm-12">
+
+                        <div class="organize-block col-lg-4 col-md-6 col-sm-12">
                             <figure class="image-box">
                                 <img src="images/clients/6.png" alt="" />
                             </figure>
                         </div>
 
-                       
-                        <div class="client-block col-lg-4 col-md-6 col-sm-12">
+
+                        <div class="organize-block col-lg-4 col-md-6 col-sm-12">
                             <figure class="image-box">
                                 <img src="images/clients/7.png" alt="" />
                             </figure>
@@ -215,13 +215,14 @@
                 </div>
             </div>
         </section>
-       
 
-        <section class="about-section">
-            <div class="auto-container">
+
+        <section class="thematic-section" id="tematic">
+            <div class="auto-container p-3">
                 <div class="row">
                     <!-- Content Column -->
-                    <div class="content-column col-lg-6 col-md-12 col-sm-12 wow fadeInLeft order-1 order-lg-0" data-wow-delay="100ms">
+                    <div class="content-column col-lg-6 col-md-12 col-sm-12 wow fadeInLeft order-1 order-lg-0"
+                        data-wow-delay="100ms">
                         <div class="inner-column">
                             <div class="sec-title">
                                 <h2>Desmutear, debatir,<br />intercambiar sobre</h2>
@@ -236,13 +237,15 @@
                             </ul>
 
                             <div class="btn-box py-5">
-                                <a href="#" class="theme-btn btn-style-four"><span class="btn-title">Inscribite</span></a>
+                                <a href="#" class="theme-btn btn-style-four"><span
+                                        class="btn-title">Inscribite</span></a>
                             </div>
                         </div>
                     </div>
 
                     <!-- Image Column -->
-                    <div class="image-column col-lg-6 col-md-12 col-sm-12 wow fadeInRight order-0 order-lg-1" data-wow-delay="100ms">
+                    <div class="image-column col-lg-6 col-md-12 col-sm-12 wow fadeInRight order-0 order-lg-1"
+                        data-wow-delay="100ms">
                         <div class="image-box">
                             <figure class="image wow fadeIn">
                                 <img src="images/3_imagen.png" alt="" />
@@ -252,16 +255,14 @@
                 </div>
             </div>
         </section>
-        
 
-       
-        <section class="features-section-two bg-white">
+        <section class="thematic-section-two bg-white">
             <div class="auto-container">
                 <div class="row text-center justify-content-around">
-                    
+
 
                     <div
-                        class="feature-block-two col-lg-4 col-md-6 col-sm-12 wow fadeInUp p-0 d-flex justify-content-center">
+                        class="thematic-block-two col-lg-4 col-md-6 col-sm-12 wow fadeInUp p-0 d-flex justify-content-center">
                         <div
                             class="inner-box d-flex flex-column align-items-center justify-content-around gap-3 bg-darkgreen">
                             <div class="icon-box">
@@ -279,7 +280,7 @@
 
 
                     <div
-                        class="feature-block-two col-lg-4 col-md-6 col-sm-12 wow fadeInUp p-0 d-flex justify-content-center">
+                        class="thematic-block-two col-lg-4 col-md-6 col-sm-12 wow fadeInUp p-0 d-flex justify-content-center">
                         <div
                             class="inner-box d-flex flex-column align-items-center justify-content-around gap-3 bg-blue">
                             <div class="icon-box">
@@ -293,16 +294,17 @@
                         </div>
                     </div>
 
-                
+
                     <div
-                        class="feature-block-two col-lg-4 col-md-6 col-sm-12 wow fadeInUp p-0 d-flex justify-content-center">
+                        class="thematic-block-two col-lg-4 col-md-6 col-sm-12 wow fadeInUp p-0 d-flex justify-content-center">
                         <div
                             class="inner-box d-flex flex-column align-items-center justify-content-around gap-3 bg-darkblue">
                             <div class="icon-box">
                                 <span class="icon flaticon-chat"></span>
                             </div>
-                            <h4 class="text-white">Enfoque de<br/>derechos humanos</h4>
-                            <div class="text text-white">Una caja de herramientas para<br>enfrentar el antisemitismo y la<br>discriminación en Latinoamérica.</div>
+                            <h4 class="text-white">Enfoque de<br />derechos humanos</h4>
+                            <div class="text text-white">Una caja de herramientas para<br>enfrentar el antisemitismo y
+                                la<br>discriminación en Latinoamérica.</div>
                         </div>
                     </div>
                 </div>
@@ -310,89 +312,90 @@
             </div>
         </section>
 
+        <section class="events-section" id="events">
+            <div class="auto-container">
+                <div class="row justify-content-center px-3">
 
-    <section class="features-section-three">
-        <div class="auto-container">
-            <div class="row justify-content-center px-3">
-              
-                <div class="title-block col-lg-4 col-md-12 col-sm-12 wow fadeInUp px-0 py-2">
-                    <div class="inner-box d-flex justify-content-center align-items-center">
-                        <div class="sec-title">
-                            <span class="title text-center text-lg-left">TODOS SOMOS INFLUENCERS</span>
-                            <h2 class="text-center text-lg-left">Participa activamente</h2>
+                    <div class="title-block col-lg-4 col-md-12 col-sm-12 wow fadeInUp px-0 py-2">
+                        <div class="inner-box d-flex justify-content-center align-items-center">
+                            <div class="sec-title">
+                                <span class="title text-center text-lg-left">TODOS SOMOS INFLUENCERS</span>
+                                <h2 class="text-center text-lg-left">Participa activamente</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="event-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp d-flex justify-content-center"
+                        data-wow-delay="200ms">
+                        <div class="inner-box d-flex justify-content-center align-items-center border border-dark">
+                            <div class="icon-box"><span class="icon flaticon-chat"></span></div>
+                            <h4>Conferencias<br>magistrales</h4>
+                        </div>
+                    </div>
+
+
+                    <div class="event-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp d-flex justify-content-center"
+                        data-wow-delay="300ms">
+                        <div class="inner-box d-flex justify-content-center align-items-center border border-dark">
+                            <div class="icon-box"><span class="icon flaticon-chat"></span></div>
+                            <h4>Sesiones de<br>entrenamiento</h4>
+                        </div>
+                    </div>
+
+
+                    <div class="event-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp d-flex justify-content-center"
+                        data-wow-delay="400ms">
+                        <div class="inner-box d-flex justify-content-center align-items-center border border-dark">
+                            <div class="icon-box"><span class="icon flaticon-chat"></span></div>
+                            <h4>Talleres</h4>
+
+                        </div>
+                    </div>
+
+
+                    <div class="event-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp d-flex justify-content-center"
+                        data-wow-delay="500ms">
+                        <div class="inner-box d-flex justify-content-center align-items-center border border-dark">
+                            <div class="icon-box"><span class="icon flaticon-chat"></span></div>
+                            <h4>Networking</h4>
+                        </div>
+                    </div>
+
+
+                    <div class="event-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp d-flex justify-content-center"
+                        data-wow-delay="600ms">
+                        <div class="inner-box d-flex justify-content-center align-items-center border border-dark">
+                            <div class="icon-box"><span class="icon flaticon-chat"></span></div>
+                            <h4>Charlas<br>que inspiran</h4>
+
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <div class="feature-block-three col-lg-4 col-md-6 col-sm-12 wow fadeInUp d-flex justify-content-center" data-wow-delay="200ms">
-                    <div class="inner-box d-flex justify-content-center align-items-center border border-dark">
-                        <div class="icon-box"><span class="icon flaticon-chat"></span></div>
-                        <h4>Conferencias<br>magistrales</h4>
-                    </div>
-                </div>
 
-               
-                <div class="feature-block-three col-lg-4 col-md-6 col-sm-12 wow fadeInUp d-flex justify-content-center" data-wow-delay="300ms">
-                    <div class="inner-box d-flex justify-content-center align-items-center border border-dark">
-                        <div class="icon-box"><span class="icon flaticon-chat"></span></div>
-                        <h4>Sesiones de<br>entrenamiento</h4>
-                    </div>
-                </div>
 
-              
-                <div class="feature-block-three col-lg-4 col-md-6 col-sm-12 wow fadeInUp d-flex justify-content-center" data-wow-delay="400ms">
-                    <div class="inner-box d-flex justify-content-center align-items-center border border-dark">
-                        <div class="icon-box"><span class="icon flaticon-chat"></span></div>
-                        <h4>Talleres</h4>
-                       
-                    </div>
-                </div>
+        <!-- Amia Section -->
+        <section class="amia-section p-3" style="background-image: url(images/5_amia.jpg)">
+            <div class="auto-container ">
+                <div class="content-box">
 
-              
-                <div class="feature-block-three col-lg-4 col-md-6 col-sm-12 wow fadeInUp d-flex justify-content-center" data-wow-delay="500ms">
-                    <div class="inner-box d-flex justify-content-center align-items-center border border-dark">
-                        <div class="icon-box"><span class="icon flaticon-chat"></span></div>
-                        <h4>Networking</h4>
-                    </div>
-                </div>
+                    <h2 class="wow fadeInDown" data-wow-delay="100ms">
+                        Homenaje a las víctimas <br><span class="text-green">del atentado a la AMIA</span>
+                    </h2>
 
-              
-                <div class="feature-block-three col-lg-4 col-md-6 col-sm-12 wow fadeInUp d-flex justify-content-center" data-wow-delay="600ms">
-                    <div class="inner-box d-flex justify-content-center align-items-center border border-dark">
-                        <div class="icon-box"><span class="icon flaticon-chat"></span></div>
-                        <h4>Charlas<br>que inspiran</h4>
-                        
+                    <div class="text wow fadeInDown" data-wow-delay="200ms">El 18 de junio a las 9:53 participaremos del
+                        acto por el 28° aniversario del<br>
+                        atentado más grande de la región. ¡28 años sin justicia!</div>
+
+                    <div class="btn-box pt-5 wow fadeInUp" data-wow-delay="250ms">
+                        <a href="#" class="theme-btn btn-style-two py-1"><span class="btn-title">Inscribite</span></a>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-  
-
-
-  <!-- Amia Section -->
-  <section class="amia-section" style="background-image: url(images/5_amia.jpg)">
-    <div class="auto-container">
-        <div class="content-box">
-            
-            <h2 class="wow fadeInDown" data-wow-delay="100ms">
-                Homenaje a las víctimas <br><span class="text-green">del atentado a la AMIA</span>
-            </h2>
-
-            <div class="text wow fadeInDown" data-wow-delay="200ms">El 18 de junio a las 9:53 participaremos del acto por el 28° aniversario del<br> 
-                atentado más grande de la región. ¡28 años sin justicia!</div>
-
-                <div class="btn-box pt-5 wow fadeInUp" data-wow-delay="250ms">
-                    <a href="#" class="theme-btn btn-style-two py-1"><span
-                            class="btn-title">Inscribite</span></a>
-                </div>
-        </div>
-    </div>
-</section>
-<!--End Amia Section -->
-
-
-
+        </section>
+        <!--End Amia Section -->
 
         <!-- Speakers Section -->
         <section class="speakers-section">
@@ -400,21 +403,19 @@
                 <div class="sec-title light text-center">
                     <h2>Speakers Confirmados</h2>
                 </div>
-
                 <div class="row">
                     <!-- Speaker Block -->
                     <div class="speaker-block col-lg-3 col-md-6 col-sm-12">
                         <div class="inner-box">
                             <div class="image-box">
                                 <figure class="image">
-                                    <a href="speakers-detail.html"><img src="images/resource/speaker-1.jpg"
-                                            alt="" /></a>
+                                    <img src="images/resource/speaker-1.jpg" alt="" />
                                 </figure>
                             </div>
                             <div class="info-box">
                                 <div class="inner">
                                     <h4 class="name">
-                                        <a href="speakers-detail.html">Dany Dayan</a>
+                                        Dany Dayan
                                     </h4>
                                     <span class="designation">Presidente de Yad Vashem</span>
                                 </div>
@@ -427,17 +428,16 @@
                         <div class="inner-box">
                             <div class="image-box">
                                 <figure class="image">
-                                    <a href="speakers-detail.html"><img src="images/resource/speaker-2.jpg"
-                                            alt="" /></a>
+                                    <img src="images/resource/speaker-2.jpg" alt="" />
                                 </figure>
                             </div>
                             <div class="info-box">
                                 <div class="inner">
                                     <h4 class="name">
-                                        <a href="speakers-detail.html">Natisha Decoux</a>
+                                        Natisha Decoux
                                     </h4>
                                     <span class="designation">Event Manager</span>
-                                    
+
                                 </div>
                             </div>
                         </div>
@@ -448,17 +448,16 @@
                         <div class="inner-box">
                             <div class="image-box">
                                 <figure class="image">
-                                    <a href="speakers-detail.html"><img src="images/resource/speaker-3.jpg"
-                                            alt="" /></a>
+                                    <img src="images/resource/speaker-3.jpg" alt="" />
                                 </figure>
                             </div>
                             <div class="info-box">
                                 <div class="inner">
                                     <h4 class="name">
-                                        <a href="speakers-detail.html">Adolfo Plahs</a>
+                                        Adolfo Plahs
                                     </h4>
                                     <span class="designation">Event Manager</span>
-                                   
+
                                 </div>
                             </div>
                         </div>
@@ -469,17 +468,16 @@
                         <div class="inner-box">
                             <div class="image-box">
                                 <figure class="image">
-                                    <a href="speakers-detail.html"><img src="images/resource/speaker-4.jpg"
-                                            alt="" /></a>
+                                    <img src="images/resource/speaker-4.jpg" alt="" />
                                 </figure>
                             </div>
                             <div class="info-box">
                                 <div class="inner">
                                     <h4 class="name">
-                                        <a href="speakers-detail.html">Mitchell Heggestad</a>
+                                        Mitchell Heggestad
                                     </h4>
                                     <span class="designation">Event Manager</span>
-                                
+
                                 </div>
                             </div>
                         </div>
@@ -489,9 +487,9 @@
         </section>
         <!-- End Speakers Section -->
 
-      
+
         <!-- Register Section -->
-        <section class="register-section">
+        <section class="contact-section" id="contact">
             <div class="auto-container">
                 <div class="outer-box">
                     <div class="row no-gutters">
@@ -509,9 +507,9 @@
                             </div>
                         </div>
                         <!--Register Form-->
-                        <div class="register-form col-lg-8 col-md-6 col-sm-12">
+                        <div class="contact-form col-lg-8 col-md-6 col-sm-12">
                             <div class="form-inner">
-                                <form method="post" action="contact.html">
+                                <form method="post" action="#">
                                     <div class="form-group">
                                         <span class="icon fa fa-user"></span>
                                         <input type="text" name="username" placeholder="Nombre completo" required="" />
@@ -519,8 +517,7 @@
 
                                     <div class="form-group">
                                         <span class="icon fa fa-envelope"></span>
-                                        <input type="email" name="email" value="" placeholder="Email"
-                                            required />
+                                        <input type="email" name="email" value="" placeholder="Email" required />
                                     </div>
 
                                     <div class="form-group">
@@ -562,7 +559,7 @@
                                         <div class="logo">
                                             <a href="#"><img src="images/1_logo.png" alt="logo" /></a>
                                         </div>
-                                      <!--   <div class="text">
+                                        <!--   <div class="text">
                                             <p>
                                                 We have very good strength in innovative technology
                                                 and tools with over 35 years of experience. We makes
@@ -592,7 +589,7 @@
                                 </div>
 
                                 <!--Footer Column-->
-                              <!--   <div class="footer-column col-xl-5 col-lg-6 col-md-6 col-sm-12">
+                                <!--   <div class="footer-column col-xl-5 col-lg-6 col-md-6 col-sm-12">
                                     <div class="footer-widget useful-links">
                                         <h2 class="widget-title">Useful Links</h2>
                                         <ul class="user-links">
@@ -608,7 +605,7 @@
                             </div>
                         </div>
 
-                        
+
                         <!--<div class="big-column col-xl-6 col-lg-12 col-md-12 col-sm-12">
                             <div class="row">
                                
@@ -714,35 +711,13 @@
                         </div>
                     </div>
                 </div>
-            </div> -->
+            </div>  -->
         </footer>
-        <!-- End Footer -->
+            <!-- End Footer -->
     </div>
     <!--End pagewrapper-->
 
-    <!-- Color Palate / Color Switcher -->
-   <!--  <div class="color-palate">
-        <div class="color-trigger">
-            <i class="fa fa-cog"></i>
-        </div>
-        <div class="color-palate-head">
-            <h6>Choose Your Demo</h6>
-        </div>
-        <ul class="box-version option-box">
-            <li>Full width</li>
-            <li class="box">Boxed</li>
-        </ul>
-        <ul class="rtl-version option-box">
-            <li>LTR Version</li>
-            <li class="rtl">RTL Version</li>
-        </ul>
-        <div class="palate-foo">
-            <span>You will find much more options for colors and styling in admin
-                panel. This color picker is used only for demonstation purposes.</span>
-        </div>
-        <a href="#" class="purchase-btn">Purchase now</a>
-    </div> -->
-    <!-- End Color Switcher -->
+
 
     <!--Scroll to top-->
     <div class="scroll-to-top scroll-to-target" data-target="html">
@@ -756,11 +731,9 @@
     <script src="js/appear.js"></script>
     <script src="js/owl.js"></script>
     <script src="js/jquery.countdown.js"></script>
-    <script src="js/countdown.configuration.js"></script>
     <script src="js/wow.js"></script>
     <script src="js/script.js"></script>
-    <!-- Color Setting -->
-    <script src="js/color-settings.js"></script>
+
 </body>
 
 </html>

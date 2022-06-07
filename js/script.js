@@ -405,6 +405,45 @@
 	
 		});
 	}
+
+	$('#TEMATIC').click(function(){
+        var link = $(this);
+        var anchor  = link.attr('href');
+        $('html, body').stop().animate({
+            scrollTop: jQuery(anchor).offset().top - 80,
+			
+        }, 2000);
+        return false;
+    });
+
+	$('#EVENTS').click(function(){
+        var link = $(this);
+        var anchor  = link.attr('href');
+        $('html, body').stop().animate({
+            scrollTop: jQuery(anchor).offset().top - 120,
+			
+        }, 2000);
+        return false;
+    });
+
+	$('#SECTION1').click(function(e){
+		e.preventDefault()
+        $('html, body').stop().animate({
+            scrollTop: 0,
+        }, 2000);
+        return false;
+    });
+	
+	$('#CONTACT').click(function(){
+        var link = $(this);
+        var anchor  = link.attr('href');
+        $('html, body').stop().animate({
+            scrollTop: jQuery(anchor).offset().top - 30,
+			
+        }, 2000);
+        return false;
+    });
+
 	
 	
 	// Elements Animation

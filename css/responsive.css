@@ -59,7 +59,7 @@
 
 	.main-header .main-box{
 		padding: 10px;
-		background-color: #1e1f36;
+		background-color: var(--_darkblue);
 	}
 
 	.header-style-two,
@@ -108,6 +108,7 @@
 	.coming-soon-section .outer-box{
 		margin: 0 -15px;
 		padding: 30px;
+		bottom:60px
 	}
 
 	.coming-soon-section .time-countdown .counter-column,
@@ -279,11 +280,23 @@
 		background-color:#000000;
 	}
 	
+	.auto-container{
+		max-width:800px;
+	}
 }
 
 @media only screen and (max-width: 767px){
+
+	.thematic-section .image-column .image-box{
+		padding: 0;
+	}
+
 	.scroll-to-top{
 		background-color: var(--_green);
+	}
+
+	.auto-container{
+		max-width:600px;
 	}
 
 	.about-section .image-column{
@@ -569,6 +582,14 @@
 		padding-bottom:120px;
 	}
 	
+	.container-responsive {
+		width: 80%;
+	}
+
+	.organize-section .organize-item .image-box{
+		height: 200px;
+	}
+	
 }
 
 
@@ -669,6 +690,7 @@
 	.coming-soon-section .outer-box{
 		margin: 0 -15px;
 		padding: 30px 15px;
+		bottom:60px
 	}
 
 	.coming-soon-section .time-countdown .counter-column,
