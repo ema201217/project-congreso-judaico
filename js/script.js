@@ -396,7 +396,8 @@
 	
 	// Scroll to a Specific Div
 	if($('.scroll-to-target').length){
-		$(".scroll-to-target").on('click', function() {
+		$(".scroll-to-target").on('click', function(e) {
+			e.preventDefault();
 			var target = $(this).attr('data-target');
 		   // animate
 		   $('html, body').animate({
@@ -407,7 +408,8 @@
 	}
 
 	if($('.thematic').length){
-		$(".thematic").on('click', function() {
+		$(".thematic").on('click', function(e) {
+			e.preventDefault();
 			var href = $(this).attr('href');
 		   // animate
 		   $('html, body').animate({
@@ -417,13 +419,13 @@
 		});
 	}
 	if($('.events').length){
-		$(".events").on('click', function() {
+		$(".events").on('click', function(e) {
+			e.preventDefault();
 			var href = $(this).attr('href');
 		   // animate
 		   $('html, body').animate({
 			   scrollTop: $(href).offset().top - 120
 			 }, 1500);
-	
 		});
 	}
 	
@@ -436,7 +438,8 @@
 		});
 	}
 	if($('.contact').length){
-		$(".contact").on('click', function() {
+		$(".contact").on('click', function(e) {
+			e.preventDefault();
 			var href = $(this).attr('href');
 		   // animate
 		   $('html, body').animate({
@@ -445,28 +448,6 @@
 		});
 	}
 
-	$('#CONTACT1').click(function(){
-        var link = $(this);
-        var anchor  = link.attr('href');
-        $('html, body').stop().animate({
-            scrollTop: jQuery(anchor).offset().top - 30,
-			
-        }, 2000);
-        return false;
-    });
-
-	$('#CONTACT2').click(function(){
-        var link = $(this);
-        var anchor  = link.attr('href');
-        $('html, body').stop().animate({
-            scrollTop: jQuery(anchor).offset().top - 30,
-        }, 2000);
-        return false;
-    });
-
-
-
-	
 	
 	// Elements Animation
 	if($('.wow').length){

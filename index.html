@@ -516,7 +516,12 @@
                         <!--Register Form-->
                         <div class="contact-form col-lg-8 col-md-6 col-sm-12">
                             <div class="form-inner">
-                                <form method="post" action="sendemail.php">
+                                <!-- <form method="post" action="https://formsubmit.co/16401901e7dc2bb7651fb1be782517e5">
+                                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
+                                    <input type="hidden" name="_subject" value="Contacto congreso"> -->
+
+                                <form method="post" action="#" id="form">
+
                                     <div class="form-group">
                                         <span class="icon fa fa-user"></span>
                                         <input type="text" name="username" placeholder="Nombre completo" required="" />
@@ -538,11 +543,19 @@
                                     </div>
 
                                     <div class="form-group text-right">
-                                        <button type="submit" class="theme-btn btn-style-five py-2">
+                                        <button type="submit" class="theme-btn btn-style-five py-2" id="form-button">
                                             <span class="btn-title">Consultanos</span>
                                         </button>
                                     </div>
                                 </form>
+
+                                <script type="text/javascript"
+                                    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+                                <script type="text/javascript">
+                                    emailjs.init('olhIWDxMvtHplF01g')
+                                </script>
+
                             </div>
                         </div>
                     </div>
@@ -739,6 +752,7 @@
     <script src="js/owl.js"></script>
     <script src="js/jquery.countdown.js"></script>
     <script src="js/wow.js"></script>
+    <script src="js/sendemail.configuration.js"></script>
     <script src="js/script.js"></script>
 
 </body>
