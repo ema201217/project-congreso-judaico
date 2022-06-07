@@ -1,7 +1,7 @@
 async function sendEmail(form, alerts = {}) {
   try {
-    const serviceID = "default_service";
-    const templateID = "template_cj3bl4k";
+    const serviceID = 'default_service';
+    const templateID = 'template_umzxl6c';
     const changeMsgBtn = () => $("#form-button span").text("Consultando...");
     const changeMsgDefault = () => $("#form-button span").text("Consultanos");
     changeMsgBtn();
