@@ -458,8 +458,8 @@
       );
     });
   }
-  if ($(".events").length) {
-    $(".events").on("click", function (e) {
+  if ($(".participate").length) {
+    $(".participate").on("click", function (e) {
       e.preventDefault();
       var href = $(this).attr("href");
       // animate
@@ -492,6 +492,19 @@
       $("html, body").animate(
         {
           scrollTop: $(href).offset().top - 30,
+        },
+        2000
+      );
+    });
+  }
+  if ($(".speakers").length) {
+    $(".speakers").on("click", function (e) {
+      e.preventDefault();
+      var href = $(this).attr("href");
+      // animate
+      $("html, body").animate(
+        {
+          scrollTop: $(href).offset().top - 120,
         },
         2000
       );
