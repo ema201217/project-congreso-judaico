@@ -510,8 +510,7 @@
     wow.init();
   }
 
- 
-/* ==========================================================================
+  /* ==========================================================================
    Low edge swap
    ========================================================================== */
   $().ready(function () {
@@ -531,7 +530,23 @@
     });
   }
   $(".logo").on("click", function () {
-	$(".dropdown").siblings().removeClass("current");
+    $(".dropdown").siblings().removeClass("current");
+  });
+
+  $(window).scroll(function () {
+    const arrElements = [
+      { idSection: "#thematic", ancla: 'a[href="#thematic"]' },
+      { idSection: "#participate", ancla: 'a[href="#participate"]' },
+      { idSection: "#speakers", ancla: 'a[href="#speakers"]' }
+    ];
+    arrElements.forEach((element) => {
+      if ($(element.idSection).offset().top - 250 < $(window).scrollTop()) {
+          $(element.ancla).parent().siblings().removeClass("current");
+          $(element.ancla).parent().addClass("current");
+      } else {
+        $(element.ancla).parent().removeClass("current");
+      }
+    });
   });
 
   /* ==========================================================================
