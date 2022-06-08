@@ -53,7 +53,7 @@
 	.main-header,
 	.main-header.fixed-header,
 	.main-header .main-box{
-		/* position: relative !important; */
+		position: relative !important;
 		background-color: #1e1f36;
 	}
 
@@ -333,6 +333,7 @@
 
 	.sec-title{
 		margin-bottom: 40px;
+		text-align: center;
 	}
 
 	.sec-title h2{
@@ -581,7 +582,15 @@
 	.banner-conference-two{
 		padding-bottom:120px;
 	}
-	
+
+	.thematic-section .content-column .inner-column{
+		padding: 0 30px;
+	}
+	.thematic-section .content-column{
+		padding: 0;
+	}
+
+
 }
 
 
@@ -1097,8 +1106,4 @@
 		display:block;
 	}
 	
-}
-
-@media only screen and (max-width: 479px) {
-
 }

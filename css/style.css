@@ -1495,6 +1495,7 @@ color:#ffffff;
 .thematic-section .content-column{
 	position: relative;
 	margin-bottom: 50px;
+	padding-left: 30px
 }
 
 .thematic-section .content-column .inner-column{
@@ -1511,9 +1512,9 @@ color:#ffffff;
 	margin-top: 20px;
 }
 
-.thematic-section .content-column .sec-title h2{
+/* .thematic-section .content-column .sec-title h2{
 	font-size: 40px;
-}
+} */
 
 .thematic-section .content-column .list-style-one{
 	margin-bottom: 30px;
@@ -1798,6 +1799,7 @@ color:#ffffff;
 ====================================================================
 
 ***/
+
 .events-section{
 	position: relative;
 	padding: 60px 0 50px;
@@ -1832,9 +1834,9 @@ color:#ffffff;
  .event-block .icon-box{
 	position: absolute;
     display: inline-block;
-    left: 10%;
+    left: 8%;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-75%);
     height: 80px;
     width: 80px;
     border-radius: 50%;
@@ -1936,6 +1938,7 @@ color:#ffffff;
     transform: translateY(-50%);
 	left: 35%;
 	text-align: left;
+	cursor: context-menu;
 }
 
 /***
@@ -1953,7 +1956,6 @@ color:#ffffff;
 
 .sec-title .title{
 	position: relative;
-	display: block;
 	font-size: 16px;
 	line-height: 1em;
 	color: var(--_light-green);
@@ -1962,6 +1964,26 @@ color:#ffffff;
 	background: -moz-linear-gradient(to right, var(--_blue) 0%, var(--_light-green) 100%);
 	background: -webkit-linear-gradient(to right, var(--_blue) 0%,var(--_light-green) 100%);
 	background: linear-gradient(to right,var(--_blue) 0%,var(--_light-green) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F70068', endColorstr='#441066',GradientType=1 );
+	color: transparent;
+	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-bottom: 15px;
+}
+
+.sec-title .title-thematic{
+	position: relative;
+	font-size: 16px;
+	line-height: 1em;
+	width: fit-content;
+	color: var(--_light-green);
+	font-weight: 600;
+	background: var(--_blue);
+	background: -moz-linear-gradient(167deg,var(--_blue) 0%,var(--_light-green) 100%);
+	background: -webkit-linear-gradient(167deg,var(--_blue) 0%,var(--_light-green) 100%);
+	background: linear-gradient(167deg,var(--_blue) 0%,var(--_light-green) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F70068', endColorstr='#441066',GradientType=1 );
 	color: transparent;
 	-webkit-background-clip: text;
@@ -2225,7 +2247,7 @@ color:#ffffff;
 	position: relative;
 	display: block;
 	font-size: 13px;
-	line-height: 30px;
+	line-height: 20px;
 	color: #ffffff;
 	font-weight: 400;
 	margin-bottom: 15px;
@@ -2571,3 +2593,4 @@ color:#ffffff;
 .container-responsive {
     width: 50%;
 }
+
