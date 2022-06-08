@@ -2132,6 +2132,7 @@ color:#ffffff;
 .speaker-block .image-box .image{
 	position: relative;
 	margin-bottom: 0;
+	transform:scale(1.1)
 }
 
 .speaker-block .image-box .image img{
