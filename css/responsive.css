@@ -57,7 +57,6 @@
 	.main-header,
 	.main-header.fixed-header,
 	.main-header .main-box{
-		position: relative !important;
 		background-color: #1e1f36;
 	}
 
@@ -293,10 +292,6 @@
 
 	.thematic-section .image-column .image-box{
 		padding: 0;
-	}
-
-	.scroll-to-top{
-		background-color: var(--_green);
 	}
 
 	.auto-container{

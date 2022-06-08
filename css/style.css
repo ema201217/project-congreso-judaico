@@ -621,7 +621,7 @@ color:#ffffff;
 	font-size: 40px;
 	line-height: 50px;
 	cursor: pointer;
-	color:var(--_green);
+	color:var(--_light-green);
 	margin:7px 0px 2px;
 	display: none;
 }
