@@ -992,7 +992,7 @@ color:#ffffff;
 	text-align: center;
 	font-size: 14px;
 	color: #ffffff;
-	background-color: var(--_darkgreen);
+	background-color: var(--_light-green);
 	cursor: pointer;
 	z-index: 10;
 	-webkit-transition:all 0.5s ease;
@@ -1952,6 +1952,10 @@ color:#ffffff;
 .sec-title{
 	position:relative;
 	margin-bottom:70px;
+}
+
+.contact.sec-title{
+	text-align: center;
 }
 
 .sec-title .title{
