@@ -450,7 +450,7 @@
       { idSection: "#participate", ancla: 'a[href="#participate"]' },
     ];
     arrElements.forEach((element) => {
-      if ($(element.idSection).offset().top - 200 < $(window).scrollTop()) {
+      if ($(element.idSection).offset().top - 500 < $(window).scrollTop()) {
           $(element.ancla).parent().siblings().removeClass("current");
           $(element.ancla).parent().addClass("current");
       } else {
