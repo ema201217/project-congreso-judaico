@@ -117,7 +117,7 @@
       margin: 0,
       nav: true,
       smartSpeed: 500,
-      autoHeight: true,
+      autoHeight: false,
       autoplay: true,
       autoplayTimeout: 5000,
       navText: [
@@ -133,97 +133,6 @@
         },
         1024: {
           items: 1,
-        },
-      },
-    });
-  }
-
-  // Single Item Carousel
-  if ($(".single-item-carousel").length) {
-    $(".single-item-carousel").owlCarousel({
-      loop: true,
-      margin: 0,
-      nav: true,
-      smartSpeed: 500,
-      autoplay: true,
-      navText: [
-        '<span class="arrow_carrot-left"></span>',
-        '<span class="arrow_carrot-right"></span>',
-      ],
-      responsive: {
-        0: {
-          items: 1,
-        },
-        600: {
-          items: 1,
-        },
-        1024: {
-          items: 1,
-        },
-      },
-    });
-  }
-
-  // Gallery  Carousel
-  if ($(".gallery-carousel").length) {
-    $(".gallery-carousel").owlCarousel({
-      loop: true,
-      margin: 0,
-      nav: true,
-      smartSpeed: 500,
-      autoplay: true,
-      navText: [
-        '<span class="arrow_carrot-left"></span>',
-        '<span class="arrow_carrot-right"></span>',
-      ],
-      responsive: {
-        0: {
-          items: 1,
-        },
-        480: {
-          items: 2,
-        },
-        767: {
-          items: 3,
-        },
-        800: {
-          items: 4,
-        },
-        1200: {
-          items: 5,
-        },
-      },
-    });
-  }
-
-  //Clients Carousel
-  if ($(".sponsors-carousel").length) {
-    $(".sponsors-carousel").owlCarousel({
-      loop: true,
-      margin: 30,
-      nav: true,
-      lazyLoad: true,
-      smartSpeed: 700,
-      autoplay: true,
-      navText: [
-        '<span class="la la-angle-left"></span>',
-        '<span class="la la-angle-right"></span>',
-      ],
-      responsive: {
-        0: {
-          items: 1,
-        },
-        600: {
-          items: 2,
-        },
-        768: {
-          items: 3,
-        },
-        1024: {
-          items: 4,
-        },
-        1200: {
-          items: 5,
         },
       },
     });
@@ -491,7 +400,7 @@
       // animate
       $("html, body").animate(
         {
-          scrollTop: $(href).offset().top - 120,
+          scrollTop: $(href).offset().top - 100,
         },
         2000
       );
@@ -518,6 +427,7 @@
       .parent()
       .addClass("current");
   });
+  
   if ($(".dropdown").length) {
     $(".dropdown").on("click", function (e) {
       const childChild = e.currentTarget.firstElementChild.firstElementChild;
@@ -536,11 +446,11 @@
   $(window).scroll(function () {
     const arrElements = [
       { idSection: "#thematic", ancla: 'a[href="#thematic"]' },
+      { idSection: "#speakers", ancla: 'a[href="#speakers"]' },
       { idSection: "#participate", ancla: 'a[href="#participate"]' },
-      { idSection: "#speakers", ancla: 'a[href="#speakers"]' }
     ];
     arrElements.forEach((element) => {
-      if ($(element.idSection).offset().top - 250 < $(window).scrollTop()) {
+      if ($(element.idSection).offset().top - 200 < $(window).scrollTop()) {
           $(element.ancla).parent().siblings().removeClass("current");
           $(element.ancla).parent().addClass("current");
       } else {

@@ -1106,3 +1106,32 @@
 	}
 	
 }
+
+/*** 
+
+====================================================================
+		Right To Left Responsive
+====================================================================
+
+***/
+
+@media only screen and (max-width: 319px){
+	.py-ts-0{
+		padding-top:0 !important;
+		padding-bottom: 0 !important;
+	}
+
+	.my-ts-1{
+		margin-top:5px !important;
+		margin-bottom: 5px !important;
+	}
+	
+	.my-ts-4{
+		margin-top:15px !important;
+		margin-bottom: 15px !important;
+	}
+
+	.d-ts-box {
+		display:-webkit-box;
+	}
+}
