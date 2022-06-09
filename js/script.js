@@ -456,11 +456,17 @@
       } else {
         $(element.ancla).parent().removeClass("current");
       }
+      if($('#amia').offset().top -300 < $(window).scrollTop()){
+        $(arrElements[0].ancla).parent().removeClass("current");
+        $(arrElements[1].ancla).parent().removeClass("current");
+        $(arrElements[2].ancla).parent().removeClass("current");
+      }
+
     });
   });
 
   /* ==========================================================================
-   When document is Scrollig, do
+   When document is Scrolling, do
    ========================================================================== */
 
   $(window).on("scroll", function () {
