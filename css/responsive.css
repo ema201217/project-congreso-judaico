@@ -111,7 +111,7 @@
 	.coming-soon-section .outer-box{
 		margin: 0 -15px;
 		padding: 30px;
-		bottom:60px
+		bottom:10px;
 	}
 
 	.coming-soon-section .time-countdown .counter-column,
@@ -690,7 +690,7 @@
 	.coming-soon-section .outer-box{
 		margin: 0 -15px;
 		padding: 30px 15px;
-		bottom:60px
+
 	}
 
 	.coming-soon-section .time-countdown .counter-column,
@@ -1121,6 +1121,56 @@
 	}
 
 	.d-box{
-		display: -webkit-inline-box;
+		display: contents !important;
+	}
+}
+
+
+@media screen and (max-width: 400px){
+	.p-i-0 {
+		padding: 0 !important;
+	}
+	.p-i-4 {
+		padding: 20px !important;
+	}
+	.py-i-0 {
+		padding-top: 0 !important;
+		padding-bottom: 0 !important;
+	}
+	.py-i-1 {
+		padding-top: 5px !important;
+		padding-bottom: 5px !important;
+	}
+	.px-i-0 {
+		padding-right: 0 !important;
+		padding-left: 0 !important;
+	}
+	.m-i-0 {
+		margin: 0 !important;
+	}
+	.mx-i-0 {
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+	}
+	.my-i-0 {
+		margin-top: 0 !important;
+		margin-bottom: 0 !important;
+	}
+	.my-i-1 {
+		margin-top: 5px !important;
+		margin-bottom: 5px !important;
+	}
+	.h-i-auto{
+		height: auto !important;
+	}
+	.fs-i-2{
+		font-size: 1.5rem !important;
+	}
+	.fs-i-1{
+		font-size: 1rem;
+	}
+
+	.event-block .icon-box .icon{
+		left:5px !important;
 	}
 }
