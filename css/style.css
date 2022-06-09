@@ -2468,3 +2468,15 @@ color:#ffffff;
 .Mw-1{
 	max-width: 300px;
 }
+
+.link-hover-green:hover {
+	background: var(--_green);
+	background: -moz-linear-gradient(180deg, var(--blue) 0%, var(--_green) 100%);
+	background: -webkit-linear-gradient(180deg, var(--blue) 0%,var(--_green) 100%);
+	background: linear-gradient(180deg,var(--_blue) 0%,var(--_green) 100%);
+	color: transparent;
+	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+	transition:all 1s;
+	font-weight: 500;
+}

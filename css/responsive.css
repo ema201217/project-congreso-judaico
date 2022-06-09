@@ -1105,33 +1105,22 @@
 		display:block;
 	}
 	
-}
-
-/*** 
-
-====================================================================
-		Right To Left Responsive
-====================================================================
-
-***/
-
-@media only screen and (max-width: 319px){
-	.py-ts-0{
-		padding-top:0 !important;
-		padding-bottom: 0 !important;
+	.amia-section .content-box h2{
+		font-size: 28px;
 	}
 
-	.my-ts-1{
-		margin-top:5px !important;
+	.thematic-section,.organize-section,.organize-block,.event-block {
+		padding-top: 0 !important;
+		padding-bottom: 0 !important;
+		margin-top: 5px !important;
 		margin-bottom: 5px !important;
 	}
-	
-	.my-ts-4{
-		margin-top:15px !important;
-		margin-bottom: 15px !important;
+
+	.organize-section .organize-item{
+		margin-bottom: 20px;
 	}
 
-	.d-ts-box {
-		display:-webkit-box;
+	.d-box{
+		display: -webkit-inline-box;
 	}
 }
