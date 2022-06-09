@@ -1408,7 +1408,7 @@ color:#ffffff;
 	position:relative;
 	text-align:center;
 	margin-bottom: 0;
-	height: 120px;
+	height: 98px;
 	border: 1px solid #dddddd;
 	box-shadow: 0 0 30px rgba(0,0,0,0.10);
 	background-color: #ffffff;
@@ -2595,7 +2595,6 @@ color:#ffffff;
     color:var(--_green)
 }
 
-.container-responsive {
-    width: 50%;
+.h-142 {
+	height: 142px !important;
 }
-
