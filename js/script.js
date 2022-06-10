@@ -361,7 +361,7 @@
       // animate
       $("html, body").animate(
         {
-          scrollTop: $(href).offset().top - 60,
+          scrollTop: $(href).offset().top - 110,
         },
         1500
       );
