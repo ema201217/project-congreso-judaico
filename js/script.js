@@ -317,7 +317,7 @@
       });
     });
 
-    $(".cs-countdown")
+  $(".cs-countdown")
       .countdown("")
       .on("update.countdown", function (event) {
         var $this = $(this).html(
@@ -379,6 +379,7 @@
       );
     });
   }
+
   if ($(".participate").length) {
     $(".participate").on("click", function (e) {
       e.preventDefault();

@@ -1123,6 +1123,9 @@
 	.d-box{
 		display: contents !important;
 	}
+
+	.p-00 {padding: 0}
+	.m-00 {margin: 0;}
 }
 
 
