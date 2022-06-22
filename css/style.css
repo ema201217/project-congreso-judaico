@@ -573,6 +573,18 @@ img {
   transform-origin: bottom left;
 }
 
+.btn-style-five.deg-180 {
+  background: linear-gradient(175deg, var(--_darkblue) 0%,var(--_blue) 30%, #00b8b6e9 100%);
+}
+
+.btn-style-five.bg-light-green:before {
+  background-color:var(--_light-green);
+}
+
+.btn-style-five.text-white-hover:hover {
+  color: #fff;
+}
+
 /* Main header */
 .main-header {
   position: fixed;
@@ -2646,18 +2658,3 @@ img {
   width: fit-content;
 }
 
-.btn-style-five.bg1 {
-  background: linear-gradient(170deg, var(--_darkblue) 0%, var(--_blue) 100%);
-}
-
-.btn-style-five.bg2 {
-  background: linear-gradient(170deg, var(--_blue) 60%, #00b8b6e9 100%);
-}
-
-.btn-style-five.bg3 {
-  background: linear-gradient(170deg, var(--_blue) 40%, #00b8b6e9 100%);
-}
-
-.btn-style-five.deg-180 {
-  background: linear-gradient(175deg, var(--_darkblue) 0%,var(--_blue) 30%, #00b8b6e9 100%);
-}
