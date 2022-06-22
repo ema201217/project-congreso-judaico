@@ -1837,6 +1837,57 @@ img {
 /***
 
 ====================================================================
+	Reserve Section
+====================================================================
+
+***/
+.reserve-section {
+  position: relative;
+  padding: 60px 0 0 0;
+  background: #ffffff;
+}
+
+.reserve-section .content-column .sec-title .text {
+  margin-top: 20px;
+}
+
+.sec-title h2.title-reserve{
+  font-size: 30px;
+}
+
+.reserve-section .content-column .list-style-one {
+  margin-bottom: 30px;
+}
+
+.reserve-section .content-column .btn-box {
+  position: relative;
+}
+
+.reserve-section .content-column .btn-box a {
+  padding: 10px 30px;
+  line-height: 20px;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+
+
+.reserve-section .image-box {
+  position: relative;
+}
+
+.reserve-section .image {
+  position: relative;
+  margin-bottom: 0;
+  max-width: 450px;
+  min-width: 300px;
+  margin: auto;
+}
+
+
+/***
+
+====================================================================
 	Events Section
 ====================================================================
 
@@ -2604,7 +2655,7 @@ img {
 }
 
 .text-darkblue {
-  color: var(--_darkblue);
+  color: var(--_darkblue) !important;
 }
 
 .lt-2 {
