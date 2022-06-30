@@ -413,11 +413,13 @@
   if ($("#btn-ver-mas").length) {
     $("#btn-ver-mas").on("click", function (e) {
       e.preventDefault();
-      $('#speakers-hidden').toggleClass('disabled')
-      if ($('#speakers-hidden').hasClass("disabled")) {
+      $('#speakers-hidden,.container-speaker-hidden').toggleClass('active')
+      if ($('#speakers-hidden,.container-speaker-hidden').hasClass("active")) {
         $('#btn-ver-mas .btn-title').text('VER MÁS');
+        location.href = '#speakers-hidden'; 
       } else {
         $('#btn-ver-mas .btn-title').text('VER MENOS');
+        location.href = '#speakers'; 
       }
     });
   }
