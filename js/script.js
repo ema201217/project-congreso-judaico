@@ -296,10 +296,10 @@
         var $this = $(this).html(
           event.strftime(
             "" +
-              '<div class="counter-column"><span class="count">%D</span>Dias</div> ' +
-              '<div class="counter-column"><span class="count">%H</span>Horas</div>  ' +
-              '<div class="counter-column"><span class="count">%M</span>Minutos</div>  ' +
-              '<div class="counter-column"><span class="count">%S</span>Segundos</div>'
+            '<div class="counter-column"><span class="count">%D</span>Dias</div> ' +
+            '<div class="counter-column"><span class="count">%H</span>Horas</div>  ' +
+            '<div class="counter-column"><span class="count">%M</span>Minutos</div>  ' +
+            '<div class="counter-column"><span class="count">%S</span>Segundos</div>'
           )
         );
       });
@@ -317,7 +317,7 @@
       });
     });
 
-  $(".cs-countdown")
+    $(".cs-countdown")
       .countdown("")
       .on("update.countdown", function (event) {
         var $this = $(this).html(
@@ -408,6 +408,22 @@
     });
   }
 
+
+  // BOTON VER MAS
+  if ($("#btn-ver-mas").length) {
+    $("#btn-ver-mas").on("click", function (e) {
+      e.preventDefault();
+      $('#speakers-hidden').toggleClass('disabled')
+      if ($('#speakers-hidden').hasClass("disabled")) {
+        $('#btn-ver-mas .btn-title').text('VER MÁS');
+      } else {
+        $('#btn-ver-mas .btn-title').text('VER MENOS');
+      }
+    });
+  }
+
+
+
   // Elements Animation
   if ($(".wow").length) {
     var wow = new WOW({
@@ -428,7 +444,7 @@
       .parent()
       .addClass("current");
   });
-  
+
   if ($(".dropdown").length) {
     $(".dropdown").on("click", function (e) {
       const childChild = e.currentTarget.firstElementChild.firstElementChild;
@@ -452,12 +468,12 @@
     ];
     arrElements.forEach((element) => {
       if ($(element.idSection).offset().top - 500 < $(window).scrollTop()) {
-          $(element.ancla).parent().siblings().removeClass("current");
-          $(element.ancla).parent().addClass("current");
+        $(element.ancla).parent().siblings().removeClass("current");
+        $(element.ancla).parent().addClass("current");
       } else {
         $(element.ancla).parent().removeClass("current");
       }
-      if($('#amia').offset().top -300 < $(window).scrollTop()){
+      if ($('#amia').offset().top - 300 < $(window).scrollTop()) {
         $(arrElements[0].ancla).parent().removeClass("current");
         $(arrElements[1].ancla).parent().removeClass("current");
         $(arrElements[2].ancla).parent().removeClass("current");
