@@ -415,10 +415,10 @@
       e.preventDefault();
       $('#speakers-hidden,.container-speaker-hidden').toggleClass('active')
       if ($('#speakers-hidden,.container-speaker-hidden').hasClass("active")) {
-        $('#btn-ver-mas .btn-title').text('VER MÁS');
+        $('#btn-ver-mas .btn-title').text('VER MENOS');
         location.href = '#speakers-hidden'; 
       } else {
-        $('#btn-ver-mas .btn-title').text('VER MENOS');
+        $('#btn-ver-mas .btn-title').text('VER MÁS');
         location.href = '#speakers'; 
       }
     });
