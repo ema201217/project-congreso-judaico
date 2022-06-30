@@ -2706,6 +2706,5 @@ img {
 }
 
 .disabled {
-  display: none;
-  transition: all 3s ease;
+display: none;
 }
