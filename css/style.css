@@ -2327,8 +2327,8 @@ img {
   gap: 15px;
 }
 
-/* ocultar un menu innesesario de youtube */
-.ytp-chrome-top,.ytp-show-cards-title {
+/* ocultar un menu innecesario de youtube */
+.ytp-show-cards-title {
   display: none !important;
 }
 
