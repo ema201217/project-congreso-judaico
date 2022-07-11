@@ -929,6 +929,7 @@
     right: 0;
     left: auto;
   }
+ 
 }
 
 @media only screen and (max-width: 767px) {
@@ -984,6 +985,7 @@
   .rtl .features-section-two .title-block .inner-box {
     text-align: center;
   }
+
 }
 
 @media only screen and (max-width: 599px) {
@@ -1125,6 +1127,8 @@
     padding-top: 15px;
     padding-bottom: 15px;
   }
+
+
 }
 
 @media screen and (max-width: 400px) {
