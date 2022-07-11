@@ -409,17 +409,32 @@
   }
 
 
-  // BOTON VER MAS
-  if ($("#btn-ver-mas").length) {
-    $("#btn-ver-mas").on("click", function (e) {
+  // BOTÓN VER MAS - SPEAKERS
+  if ($("#btn-ver-mas-speakers").length) {
+    $("#btn-ver-mas-speakers").on("click", function (e) {
       e.preventDefault();
       $('#speakers-hidden,.container-speaker-hidden').toggleClass('active')
       if ($('#speakers-hidden,.container-speaker-hidden').hasClass("active")) {
-        $('#btn-ver-mas .btn-title').text('VER MENOS');
+        $('#btn-ver-mas-speakers .btn-title').text('VER MENOS');
         location.href = '#speakers-hidden'; 
       } else {
-        $('#btn-ver-mas .btn-title').text('VER MÁS');
-        location.href = '#speakers'; 
+        $('#btn-ver-mas-speakers .btn-title').text('VER MÁS');
+        location.href = '#speakers';
+      }
+    });
+  }
+
+  // BOTÓN VER MAS - PARTAKERS
+  if ($("#btn-ver-mas-partakers").length) {
+    $("#btn-ver-mas-partakers").on("click", function (e) {
+      e.preventDefault();
+      $('#partakers-hidden,.container-partaker-hidden').toggleClass('active')
+      if ($('#partakers-hidden,.container-partaker-hidden').hasClass("active")) {
+        $('#btn-ver-mas-partakers .btn-title').text('VER MENOS');
+        location.href = '#partakers-hidden'; 
+      } else {
+        $('#btn-ver-mas-partakers .btn-title').text('VER MÁS');
+        location.href = '#partakers'; 
       }
     });
   }
