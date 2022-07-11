@@ -2415,15 +2415,13 @@ img {
 
 ***/
 
-.logos-section {
-  
+.logos-container{
+gap: 20px;
 }
 
 .logos-section figure{
   width: 200px;
 }
-
-
 
 /***
 
