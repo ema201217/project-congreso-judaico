@@ -94,7 +94,9 @@
     display: none;
   }
 
+
   .banner-carousel .swiper-slide {
+    
     padding: 200px 0;
   }
 
@@ -985,7 +987,9 @@
   .rtl .features-section-two .title-block .inner-box {
     text-align: center;
   }
-
+/*   .gallery-item .image-box .image img{
+    object-fit:contain !important;
+  } */
 }
 
 @media only screen and (max-width: 599px) {
