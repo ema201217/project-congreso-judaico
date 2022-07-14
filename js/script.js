@@ -113,14 +113,13 @@
     $(".banner-carousel").owlCarousel({
       animateOut: "fadeOut",
       animateIn: "fadeIn",
-      loop: false,
+      loop: true,
       margin: 0,
       nav: true,
       smartSpeed: 500,
       autoHeight: false,
-      autoplay: false,
+      autoplay: true,
       autoplayTimeout: 5000,
-      center:true,
       navText: [
         '<span class="fa fa-angle-left">',
         '<span class="fa fa-angle-right">',
@@ -138,70 +137,6 @@
       },
     });
   }
-
-
-  /* -------------------------------------------- */
-  /*           GALLERY IMAGES FUNCTIONS           */
-  /* -------------------------------------------- */
-  // Gallery  Carousel
-  if ($('.gallery-carousel').length) {
-    $('.gallery-carousel').owlCarousel({
-      loop: true,
-      smartSpeed: 1000,
-      margin: 40,
-      stagePadding:10,
-      nav: false,
-      autoplay: true,
-      autoplayTimeout: 6000,
-      /* autoplayHoverPause:true, */
-      merge: true,
-      center: true,
-      video:true,
-      videoWidth: true,
-      videoHeight: true,
-      lazyLoad:true,
-      slideTransition:'linear',
-      responsive: {
-        0: {
-          items: 1,
-        },
-        480: {
-          items: 2
-        },
-        767: {
-          items: 3
-        },
-        1000: {
-          items: 4,
-          mergeFit: true
-        }
-      }
-    });
-  }
-
-  //LightBox / Fancybox
-  if ($(".lightbox-image").length) {
-    $(".lightbox-image").fancybox({
-      'transitionIn': 'elastic',
-      'transitionOut': 'elastic',
-      'speedIn': 600,
-      'speedOut': 200,
-      'overlayShow': true,
-      'showCloseButton'	: true,
-      'loop':true
-    });
-  }
-
-  // Clicking on the image
-  $('.lightbox-image').on('click', function () {
-    // We click on fancybox element to enlarge the image
-    $('.fancybox-button--fullscreen').click()
-  })
-
-  /* -------------------------------------------- */
-  /*             GALLERY FUNCTIONS END            */
-  /* -------------------------------------------- */
-
 
   //Parallax Scene for Icons
   if ($(".parallax-scene-1").length) {
@@ -393,6 +328,17 @@
       });
   }
 
+  //LightBox / Fancybox
+  if ($(".lightbox-image").length) {
+    $(".lightbox-image").fancybox({
+      openEffect: "fade",
+      closeEffect: "fade",
+      helpers: {
+        media: {},
+      },
+    });
+  }
+
   // Scroll to a Specific Div
   if ($(".scroll-to-target").length) {
     $(".scroll-to-target").on("click", function (e) {
@@ -470,7 +416,7 @@
       $('#speakers-hidden,.container-speaker-hidden').toggleClass('active')
       if ($('#speakers-hidden,.container-speaker-hidden').hasClass("active")) {
         $('#btn-ver-mas-speakers .btn-title').text('VER MENOS');
-        location.href = '#speakers-hidden';
+        location.href = '#speakers-hidden'; 
       } else {
         $('#btn-ver-mas-speakers .btn-title').text('VER MÁS');
         location.href = '#speakers';
@@ -485,13 +431,15 @@
       $('#partakers-hidden,.container-partaker-hidden').toggleClass('active')
       if ($('#partakers-hidden,.container-partaker-hidden').hasClass("active")) {
         $('#btn-ver-mas-partakers .btn-title').text('VER MENOS');
-        location.href = '#partakers-hidden';
+        location.href = '#partakers-hidden'; 
       } else {
         $('#btn-ver-mas-partakers .btn-title').text('VER MÁS');
-        location.href = '#partakers';
+        location.href = '#partakers'; 
       }
     });
   }
+
+
 
   // Elements Animation
   if ($(".wow").length) {
@@ -568,6 +516,3 @@
     enableMasonry();
   });
 })(window.jQuery);
-
-
-
