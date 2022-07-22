@@ -94,7 +94,9 @@
     display: none;
   }
 
+
   .banner-carousel .swiper-slide {
+    
     padding: 200px 0;
   }
 
@@ -848,6 +850,17 @@
     left: 0;
     top: 0;
   }
+
+  .event-detail,
+  .buy-ticket,
+  .features-section-three,
+  .news-section,
+  .pricing-section,
+  .schedule-section,
+  .gallery-section,
+  .speakers-section {
+    padding: 20px 0 40px;
+  }
 }
 
 @media only screen and (max-width: 479px) {
@@ -986,6 +999,13 @@
     text-align: center;
   }
 
+  .m-md-1{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+/*   .gallery-item .image-box .image img{
+    object-fit:contain !important;
+  } */
 }
 
 @media only screen and (max-width: 599px) {
