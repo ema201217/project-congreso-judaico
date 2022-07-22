@@ -458,7 +458,8 @@ img {
 }
 
 .btn-style-four:hover {
-  color: #24293d;
+  color: var(--_blue);
+  font-weight: 600;
   -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   -ms-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -472,6 +473,7 @@ img {
   top: 0;
   height: 120%;
   width: 100%;
+  color: var(--_blue);
   content: "";
   background-color: #ffffff;
   -webkit-transform: scale(0, 1);
@@ -2691,7 +2693,6 @@ gap: 20px;
 	position: relative;
 	padding: 30px 0;
   margin:150px 0 50px;
-  background-color:var(--_darkblue)
 }
 
 .title-gallery {
@@ -2699,42 +2700,15 @@ gap: 20px;
   line-height: 1em;
   color: var(--_light-green);
   font-weight: 600;
-  /* background: var(--_blue); */
-  background: -moz-linear-gradient(100deg,
-  var(--_light-green) 30%,
-      var(--_blue) 80%
-     );
-  background: -webkit-linear-gradient(100deg,
-  var(--_light-green) 30%,
-      var(--_blue) 80%
-     ); 
-  background: linear-gradient(100deg,
-  var(--_light-green) 30%,
-      var(--_blue) 60%,
-  var(--_light-green) 80%,
-      var(--_blue) 100%
-     );
-     background-size: 1000% 1000%;
-  background-repeat: repeat;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F70068', endColorstr='#441066', GradientType=1);
+  background: var(--_light-green); 
   color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 15px;
-  animation:translateBackground 10s infinite alternate;  
-  transition: all 5s;
+  margin: 30px 0;
 }
 
-@keyframes translateBackground {
-  0% {
-   background-position: 0% 0%;
-  }
 
-  100% {
-    background-position: 100% 100%;
-   }
-  
-}
 .gallery-item{
   height: 400px !important;
 }
@@ -2811,7 +2785,6 @@ transition: all .5s ease;
 }
 
 .gallery-section .owl-nav{
-	/* display: none;  */
   position: absolute;
   top: 50%;
   left: 10px;
@@ -2830,10 +2803,6 @@ transition: all .5s ease;
   height: 100%;
 }
 
-.owl-stage {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
 
 /***
 

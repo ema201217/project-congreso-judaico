@@ -149,11 +149,11 @@
       loop: true,
       smartSpeed: 1000,
       margin: 40,
-      stagePadding:10,
+      stagePadding:0,
       nav: false,
       autoplay: true,
       autoplayTimeout: 6000,
-      /* autoplayHoverPause:true, */
+      autoplayHoverPause:true,
       merge: true,
       center: true,
       video:true,
@@ -192,11 +192,11 @@
     });
   }
 
-  // Clicking on the image
-  $('.lightbox-image').on('click', function () {
-    // We click on fancybox element to enlarge the image
-    $('.fancybox-button--fullscreen').click()
-  })
+/*   // // Clicking on the image
+  // $('.lightbox-image').on('click', function () {
+  //   // We click on fancybox element to enlarge the image
+  //   $('.fancybox-button--fullscreen').click()
+  // }) */
 
   /* -------------------------------------------- */
   /*             GALLERY FUNCTIONS END            */
