@@ -1898,6 +1898,7 @@ img {
   position: relative;
   padding: 60px 0 0 0;
   background: #ffffff;
+  display: none;
 }
 
 .reserve-section .content-column .sec-title .text {
@@ -2520,10 +2521,79 @@ gap: 20px;
 /***
 
 ====================================================================
+		getReadyEvent Section
+====================================================================
+
+***/
+.afterEvent-section {
+  position: relative;
+  padding: 40px 0 60px;
+}
+
+.afterEvent-section:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--_darkblue);
+  content: "";
+}
+
+.afterEvent-section .card-title {
+  position: relative;
+  display: block;
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 700;
+  color: var(--_darkblue) !important;
+}
+
+.afterEvent-section .sec-title .text {
+  position: relative;
+  display: block;
+  font-size: 18px;
+  line-height: 25px;
+  color: var(--_gray);
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+
+.afterEvent-section .card {
+  width: 300px;
+}
+
+.afterEvent-section .card-title {
+  font-size: 1.8rem;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.afterEvent-section .video-container iframe {
+  width: 100%;
+  height:auto;
+  max-width: 700px;
+  min-width: 300px;
+  min-height: 300px;
+  max-height: 800px;
+}
+
+.title-afterEvent {
+  line-height: 1em;
+  font-weight: 600;
+}
+
+
+
+/***
+
+====================================================================
 		Contact Section
 ====================================================================
 
 ***/
+
+
 
 .contact-section {
   position: relative;
@@ -2941,15 +3011,19 @@ transition: all .5s ease;
 }
 
 .bg-blue {
-  background-color: var(--_blue);
+  background-color: var(--_blue) !important;
 }
 
 .bg-darkblue {
-  background-color: var(--_darkblue);
+  background-color: var(--_darkblue) !important;
 }
 
 .text-green {
-  color: var(--_green);
+  color: var(--_green) !important;
+}
+
+.text-lightgreen {
+  color: var(--_light-green) !important;
 }
 
 .text-darkblue {
