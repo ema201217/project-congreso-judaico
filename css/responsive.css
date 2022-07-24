@@ -51,6 +51,10 @@
   .sec-title {
     text-align: left;
   }
+
+  .afterEvent-section .video-container iframe {
+    height:400px;
+  }
 }
 
 @media only screen and (max-width: 1023px) {
