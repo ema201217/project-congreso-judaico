@@ -462,6 +462,20 @@
     });
   }
 
+  if ($(".images").length) {
+    $(".images").on("click", function (e) {
+      e.preventDefault();
+      var href = $(this).attr("href");
+      // animate
+      $("html, body").animate(
+        {
+          scrollTop: $(href).offset().top - 50,
+        },
+        2000
+      );
+    });
+  }
+
 
   // BOTÓN VER MAS - SPEAKERS
   if ($("#btn-ver-mas-speakers").length) {
