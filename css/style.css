@@ -1613,7 +1613,6 @@ transition: all .5s ease;
 .coming-soon-section {
   position: relative;
   z-index: 2;
-  display: none;
 }
 
 .coming-soon-section .outer-box {
